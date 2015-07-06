@@ -1,0 +1,23 @@
+<header>
+  <h1>UtcToLocalAngularJS Example</h1>
+  <p>This example uses a filter to implement the code from <a href="/0xbrock/UTCtoLocalJS">UTCtoLocalJS</a>.</p>
+  <p>A non-AngularJS version can be found at <a href="/0xbrock/UTCtoLocalJS">UTCtoLocalJS</a>.</p>
+  <p>All times rendered in the source are in UTC and converted to the browser's local time.</p>
+</header>
+
+<div class="row">
+  <div class="col-md-6">
+    <h4>UTC</h4>
+  </div>
+  <div class="col-md-6">
+    <h4>Local</h4>
+  </div>
+</div>
+<div class="row" ng-repeat="time in viewModel.times">
+  <div class="col-md-6">
+    <time datetime="{{time}}">{{ time }}</time>
+  </div>
+  <div class="col-md-6">
+    <time datetime="{{time}}">{{ time | utctolocal }}</time>
+  </div>
+</div>
