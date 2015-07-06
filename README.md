@@ -1,7 +1,6 @@
-# utcto-local-angular-js
+# UTCtoLocalAngularJS
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.12.0.
+This example uses a filter to implement the code from <a href="/0xbrock/UTCtoLocalJS">UTCtoLocalJS</a>.
 
 ## Build & development
 
